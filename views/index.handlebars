@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <div class="col m12 center">
+            <h1>Da' Burger Joint</h1>       
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m12">
+            <form class="create-form">
+                <div class="input-field col m6">
+                    <input placeholder="Enter Name for Your New Burger Name" id="burger-name" name="burger-name" type="text">
+                    <label for="burger_name"></label>
+                </div>
+                <div class="col m6">
+                    <button type="submit" name="action">
+                        <a class="btn-floating btn-large waves-effect waves-light indigo darken-4 pulse">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </button>
+                </div>
+            </form> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m6">
+            <h4>Available Burgers</h4>
+            <ul id="burger-list">
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col m6">
+            <h4>Burgers Eaten</h4>
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        {{> burgers/burger-block devoured=true}}
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
+    
+
+    
+
+
+
+
+
+
