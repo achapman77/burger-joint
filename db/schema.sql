@@ -16,5 +16,6 @@ CREATE TABLE burgers
     burger_name VARCHAR(100) NOT NULL,
     devoured BOOLEAN DEFAULT false,
     img VARCHAR(100),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY (id)
 );
