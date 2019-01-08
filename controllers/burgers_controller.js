@@ -14,11 +14,26 @@ router.get("/", function (req, res) {
     });
 });
 
+var burgerImgArray = [
+    "assets/img/burger-4.jpg",
+    "assets/img/burger-5.jpg",
+    "assets/img/burger-6.jpg",
+    "assets/img/burger-7.jpg",
+    "assets/img/burger-8.jpg",
+    "assets/img/burger-9.jpg",
+    "assets/img/burger-10.jpg",
+    "assets/img/burger-11.jpg",
+    "assets/img/burger-12.jpg",
+    "assets/img/burger-13.jpg",
+    "assets/img/burger-14.jpg",
+];
+
 router.post("/api/burgers", function (req, res) {
     burger.insertOne([
-        "burger_name"
+        "burger_name", "img"
     ], [
-            req.body.burger_name
+            req.body.burger_name,
+            burgerImgArray.shift()
         ], function (result) {
             res.json({ id: result.insertId });
         });
@@ -30,7 +45,7 @@ router.put("/api/burgers/:id", function (req, res) {
     console.log(`condition`, condition);
 
     burger.updateOne({
-        devoured: req.body.data
+        devoured: req.body.devoured
     }, condition, function (result) {
         if (result.changeRows == 0) {
             return res.status(404).end();

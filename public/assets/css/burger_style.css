@@ -1,8 +1,52 @@
+body{
+    font-family: 'Fredericka the Great', cursive;
+}
 button {
     border: none;
     background-color: none;
 }
+h2{
+    border-bottom: solid 1px black;
+}
+
+/* #menu {
+    background-color: rgba(255, 8, 0, 0.281);
+}
+
+#order{
+    background-color: rgba(17, 0, 255, 0.281);
+} */
+
+/* .btn {
+    background-color: #1a237e !important;
+} */
+
+input {
+    padding-left: 0.5rem;
+}
+
+input::placeholder{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+}
+
+.red-placeholder::placeholder{
+    color: red;
+}
 
 .row {
     margin: 1rem 0;
+}
+
+.burger-img{
+    max-width: 9rem;
+    max-height: 9rem;
+}
+
+.burger-icon {
+    max-width: 4.5rem;
+}
+
+.imb-box{
+    height: 10rem;
 }

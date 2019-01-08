@@ -1,3 +1,5 @@
-INSERT INTO burgers (burger_name) VALUES ("Bob's Burger");
-INSERT INTO burgers (burger_name) VALUES ("Big Boy Burger");
-INSERT INTO burgers (burger_name) VALUES ("Banger Burger");
+INSERT INTO burgers (burger_name, img) VALUES ("The Cheech", "/assets/img/burger-1.jpg");
+INSERT INTO burgers (burger_name, img) VALUES ("The Chong", "/assets/img/burger-2.jpg");
+INSERT INTO burgers (burger_name, img) VALUES ("The Chilango", "/assets/img/burger-3.jpg");
+
+
