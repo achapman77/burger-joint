@@ -5,12 +5,12 @@ $(function () {
     //         $
     //     }
     // }
-    // function changeBtnColor() {
-    //     var devouredState = $(this).data("devouredstate")
-    //     if (devouredState == false) {
-    //         $("change-devoured").find("a").removeClass("orange.darken-4").addClass("indigo.darken-4");
-    //     }
-    // }
+    function changeBtnColor() {
+        var devouredState = $(this).data("devouredstate")
+        if (devouredState == false) {
+            $("change-devoured").find("a").removeClass("orange.darken-4").addClass("indigo.darken-4");
+        }
+    }
 
     $(".change-devoured").on("click", function (event) {
         var id = $(this).data("id");

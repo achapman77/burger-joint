@@ -10,6 +10,7 @@ Denver University Unit-14 Handlebars Homework
 ## Bonus:
 * Added form validation w/ CSS
 * Added auto images upon burger submission
+* Added handlebars logic to dynamically change CSS
 
 ## Future Improvements:
 * More front-end design
@@ -18,7 +19,7 @@ Denver University Unit-14 Handlebars Homework
 * Add checkboxes with food items & $$ to build custom burger with cost.
 * Hook in to burger gif or burger img api to auto generate images
 
-## Skills Practiced:
+## Technologies:
 * MySQL Database
 * Handlebars w/ Partials
 * Handcrafted ORM

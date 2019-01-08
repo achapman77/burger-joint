@@ -8,7 +8,7 @@
 			<h4>{{burger_name}}</h4>
 		</div>
 		<div class="col s4 change-devoured valign-wrapper" data-id="{{id}}" data-devouredstate="{{devoured}}">
-			<a class="waves-effect waves-light btn darken-4 orange">
+			<a class="waves-effect waves-light btn {{#if devoured}}indigo{{else}}orange{{/if}} darken-4">
 				{{#if devoured}}Nom Nom!{{else}}Order{{/if}}
 			</a>
 		</div>
