@@ -1,4 +1,4 @@
-# The Burger Joing
+# The Burger Joint
 
 ## Description:
 Enter a New Burger Name and Click the Burger Icon.  Your new burger will appear on the Menu.  Click "Order" and your burger will appear on you plate.  Enjoy!
