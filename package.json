@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/achapman77/burger-joint.git"
@@ -22,5 +18,9 @@
     "express-handlebars": "^3.0.0",
     "materialize-css": "^1.0.0-rc.2",
     "mysql": "^2.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   }
 }
